@@ -100,10 +100,11 @@ public class Arkanoid extends GraphicsProgram{
 
 	}
 
+	
 	private void creaPiramide(){//creo la  primera pantalla
 		int numLadrillos=14;
 		int desplazamientoInicial=(getWidth()-numLadrillos*ANCHO_LADRILLO)/2;
-		add(niveles);//añado abajo el numero de nivel
+		add(niveles);//aï¿½ado abajo el numero de nivel
 		niveles.actualiza(this);
 		for(int j=0; j<numLadrillos; j++){
 			for(int i=j; i<numLadrillos; i++){
@@ -112,7 +113,7 @@ public class Arkanoid extends GraphicsProgram{
 				Ladrillo ladrillo=new Ladrillo(posicionX, posicionY, ANCHO_LADRILLO, ALTO_LADRILLO, colorRandom.nextColor());//creo el ladrillo	
 				add(ladrillo);
 				pause(10);//hago que se cree ladrillo a ladrillo para que quede bonito
-				//add(miLadrillo.ladrillo, posicionX, posicionY);//añado la imagen
+				//add(miLadrillo.ladrillo, posicionX, posicionY);//aï¿½ado la imagen
 			}
 
 		}
@@ -121,7 +122,7 @@ public class Arkanoid extends GraphicsProgram{
 	private void mediaPiramide(){//creo media piramide 
 		int numLadrillos = 18;
 		int desplazamientoInicial=(getWidth()-numLadrillos*ANCHO_LADRILLO)/2;
-		add(niveles);//añado abajo el numero de nivel
+		add(niveles);//aï¿½ado abajo el numero de nivel
 		nivel++;//sumo el nivel
 		niveles.actualiza(this);
 		for (int i = numLadrillos; i > 0; i--) {
@@ -136,7 +137,7 @@ public class Arkanoid extends GraphicsProgram{
 	private void creaMuro(){
 		int numLadrillos=10;
 		int desplazamientoInicial=(getWidth()-numLadrillos*ANCHO_LADRILLO)/2;
-		add(niveles);//añado abajo el numero de nivel
+		add(niveles);//aï¿½ado abajo el numero de nivel
 		nivel++;
 		nivel++;
 		niveles.actualiza(this);
@@ -153,7 +154,7 @@ public class Arkanoid extends GraphicsProgram{
 					add(ladrillo);
 				}
 				pause(10);//hago que se cree ladrillo a ladrillo para que quede bonito
-				//add(miLadrillo.ladrillo, posicionX, posicionY);//añado la imagen
+				//add(miLadrillo.ladrillo, posicionX, posicionY);//aï¿½ado la imagen
 			}
 		}
 	}
