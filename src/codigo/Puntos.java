@@ -1,7 +1,7 @@
 /*
  * Autor:Angel Esquinas
  * 
- * Esto va ser Arkanoid 
+ * Puntos es la puntuacion que obtienes al destuir los ladrillos con la bola
  * 
  */
 package codigo;
@@ -25,16 +25,16 @@ public class Puntos extends GLabel{
 	
 	public Puntos(String str, int x, int y) {
 		super(str, x, y);
+		
 		try {
 			 
-            letras= Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("iomanoid.ttf"));
+            letras= Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("iomanoid.ttf"));//cambio la fuente de las letras
         } catch (Exception e) {
         }
-        // cambio el color de la fuente
-        setColor(Color.green);
- 
-        // cambio el alto y el ancho de la fuente.
-        setFont(letras.deriveFont(30, 30));
+        
+        setColor(Color.green);// cambio el color de la fuente
+    
+        setFont(letras.deriveFont(30, 30));// cambio el alto y el ancho de la fuente
 	}
 
 	public void actualiza(Arkanoid arkanoid) {//actualiza marcador segun los puntos que vayas consiguiendo

@@ -1,8 +1,7 @@
 /*
  * Autor:Angel Esquinas
  * 
- * Esto va ser la primera parte del Arkanoid 
- * Sirve para crear un cursor que sera la nave del juego Arkanoid
+ * Cursor es la tabla donde choca la bola para que no caiga y no perder vidas.
  * 
  */
 package codigo;
@@ -23,8 +22,10 @@ public class Cursor extends GRect{
 	 */
 	public Cursor(int posY, double ancho, double alto, Color color){
 		super(ancho, alto);
-		setFilled(true);
-		setFillColor(color);
+		
+		setFilled(true);//relleno el cursor
+		setFillColor(color);//color del cursor
+		
 		setLocation(0, posY);//pongo el cursor en la coordenada Y que me pasan
 	}
 }

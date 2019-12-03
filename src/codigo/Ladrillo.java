@@ -1,7 +1,7 @@
 /*
  * Autor:Angel Esquinas
  * 
- * Esto va ser Arkanoid 
+ * Ladrillo con estos se forman los mapas al chocar la bola con ellos se destruyen.
  * 
  */
 package codigo;
@@ -11,8 +11,6 @@ import java.awt.Color;
 import acm.graphics.GRect;
 
 public class Ladrillo extends GRect{
-	public int golpes=0;
-	//GImage ladrillo;
 
 	/**
 	 * 
@@ -25,10 +23,9 @@ public class Ladrillo extends GRect{
 	 */
 	public Ladrillo(double posX, double posY, double ancho, double alto, Color color){
 		super(posX, posY, ancho, alto);
-		setFilled(true);
-		setFillColor(color);
-		//ladrillo=new GImage("Imagen/LadrilloNaranja.png");
-		//ladrillo.setSize(ancho, alto);
+		
+		setFilled(true);//relleno del ladrillo
+		setFillColor(color);//color del ladrillo
 	}
 
 }
